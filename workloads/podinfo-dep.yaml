@@ -28,7 +28,7 @@ spec:
     spec:
       initContainers:
       - name: init
-        image: alpine:3.10
+        image: alpine:3.10.1
         command:
         - sleep
         - "1"
@@ -55,6 +55,7 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
+        - --ui-message=Welcome_to_Flux
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
